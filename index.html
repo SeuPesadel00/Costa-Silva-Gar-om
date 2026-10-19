@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Costa &amp; Silva Eventos | Maître e Garçom Profissional em Brasília</title>
+  <meta name="description" content="Serviço de maître e garçom profissional para eventos, casamentos, festas particulares, bares e restaurantes em Brasília-DF. Maximiliano Costa, Costa &amp; Silva Eventos." />
+  <link rel="icon" type="image/svg+xml" href="img/logo-transparent.svg" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            vinho: { DEFAULT: '#8B0014', dark: '#5C000D' },
+            dourado: { DEFAULT: '#F5B335', light: '#FFD27A' },
+            carvao: '#141414'
+          },
+          fontFamily: {
+            sans: ['"Josefin Sans"', 'sans-serif'],
+            hand: ['Caveat', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: all .8s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .gold-line { background: linear-gradient(90deg, transparent, #F5B335, transparent); }
+    .paper { background: #f8f8f5; }
+  </style>
+</head>
+
+<body class="bg-carvao text-white font-sans antialiased selection:bg-dourado selection:text-carvao">
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="topo" class="fixed top-0 inset-x-0 z-50 bg-carvao/90 backdrop-blur border-b border-vinho/40">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-5 py-4">
+      <a href="#inicio" class="flex items-center gap-3">
+        <span class="text-dourado text-2xl font-light tracking-widest">COSTA &amp; SILVA</span>
+      </a>
+      
+      <ul id="menu" class="hidden md:flex items-center gap-7 text-xs uppercase tracking-widest">
+        <li><a href="#sobre" class="hover:text-dourado transition">Sobre</a></li>
+        <li><a href="#servicos" class="hover:text-dourado transition">Serviços</a></li>
+        <li><a href="#unidades" class="hover:text-dourado transition">Unidades</a></li>
+        <li><a href="#calculadora" class="hover:text-dourado transition">Calculadora</a></li>
+        <li><a href="#galeria" class="hover:text-dourado transition">Galeria</a></li>
+        <li><a href="#avaliacao" class="hover:text-dourado transition">Avaliação</a></li>
+        <li><a href="#contato" class="px-5 py-2 bg-vinho hover:bg-vinho-dark rounded-full transition text-white">Contato</a></li>
+      </ul>
+
+      <button id="toggleMenu" aria-label="Abrir menu" class="md:hidden text-dourado text-3xl focus:outline-none">☰</button>
+    </nav>
+
+    <!-- Menu Mobile -->
+    <ul id="menuMobile" class="hidden md:hidden flex flex-col gap-4 px-5 pb-6 text-sm uppercase tracking-widest bg-carvao/95 border-b border-vinho/30">
+      <li><a href="#sobre" class="hover:text-dourado transition">Sobre</a></li>
+      <li><a href="#servicos" class="hover:text-dourado transition">Serviços</a></li>
+      <li><a href="#unidades" class="hover:text-dourado transition">Unidades</a></li>
+      <li><a href="#calculadora" class="hover:text-dourado transition">Calculadora</a></li>
+      <li><a href="#galeria" class="hover:text-dourado transition">Galeria</a></li>
+      <li><a href="#avaliacao" class="hover:text-dourado transition">Avaliação</a></li>
+      <li><a href="#contato" class="text-dourado">Contato</a></li>
+    </ul>
+  </header>
+
+  <!-- ==================== HERO (VISUAL CLEAN EXATO DA IMAGEM) ==================== -->
+  <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-vinho via-vinho-dark to-carvao">
+    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_20%,#F5B335_0,transparent_40%)] pointer-events-none"></div>
+    
+    <div class="relative text-center px-6 pt-24 reveal">
+      
+      <!-- Círculo com Emblema Minimalista -->
+      <svg class="mx-auto h-28 w-auto mb-6" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <circle cx="60" cy="60" r="56" stroke="#F5B335" stroke-width="2"/>
+        <path d="M38 52 L82 52 L60 66 Z" fill="#000" stroke="#F5B335" stroke-width="1.5"/>
+        <path d="M48 60 L72 60 L60 76 Z" fill="#000"/>
+        <rect x="58" y="76" width="4" height="22" fill="#000"/>
+      </svg>
+
+      <p class="text-dourado tracking-[0.6em] text-sm uppercase mb-4">Maître &amp; Garçom Profissional</p>
+      
+      <h1 class="text-5xl md:text-7xl font-light tracking-wider leading-tight">
+        COSTA <span class="text-dourado">&amp;</span> SILVA
+      </h1>
+      
+      <p class="text-dourado tracking-[0.8em] text-sm md:text-base mt-3">EVENTOS</p>
+      
+      <div class="gold-line h-px w-64 mx-auto my-8"></div>
+      
+      <p class="font-hand text-3xl md:text-4xl text-dourado-light">A arte de servir bem!</p>
+      
+      <p class="mt-4 text-gray-300 max-w-xl mx-auto leading-relaxed">
+        Atendimento de alto padrão para eventos particulares, bares e restaurantes em Brasília e no DF.
+      </p>
+      
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#contato" class="px-8 py-3 bg-dourado text-carvao font-semibold rounded-full hover:bg-dourado-light transition duration-300">
+          Solicitar orçamento
+        </a>
+        <a href="#servicos" class="px-8 py-3 border border-dourado text-dourado rounded-full hover:bg-dourado hover:text-carvao transition duration-300">
+          Ver serviços
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE ==================== -->
+  <section id="sobre" class="py-24 px-6 bg-carvao">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Foto Real do Maximiliano Costa -->
+      <div class="reveal">
+        <img src="img/foto-maximiliano.jpg" alt="Maximiliano Costa em serviço, de terno e gravata borboleta" class="rounded-2xl shadow-2xl shadow-vinho/40 w-full object-cover aspect-[4/5]" loading="lazy" />
+      </div>
+
+      <div class="reveal">
+        <p class="text-dourado uppercase tracking-[0.3em] text-sm mb-3">Sobre</p>
+        <h2 class="text-4xl font-light mb-6">Maximiliano Costa</h2>
+        
+        <p class="text-gray-300 leading-relaxed mb-4">
+          Como Maître e Garçom Profissional, minha função vai além de apenas servir. Sou responsável por proporcionar uma experiência excepcional aos clientes, garantindo um atendimento de alto padrão em bares, restaurantes e eventos particulares.
+        </p>
+        
+        <p class="text-gray-400 leading-relaxed mb-8">
+          Atuo em Brasília-DF com foco em elegância, discrição e pontualidade em cada detalhe.
+        </p>
+        
+        <div class="flex gap-8 border-t border-vinho/30 pt-6">
+          <div>
+            <p class="text-3xl text-dourado font-semibold">4,8★</p>
+            <p class="text-sm text-gray-400">Avaliação média</p>
+          </div>
+          <div>
+            <p class="text-3xl text-dourado font-semibold">DF</p>
+            <p class="text-sm text-gray-400">Brasília e região</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SERVIÇOS ==================== -->
+  <section id="servicos" class="py-24 px-6 bg-[#0f0f0f]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-16 reveal">
+        <p class="text-dourado uppercase tracking-[0.3em] text-sm mb-3">Descrição de serviço</p>
+        <h2 class="text-4xl font-light">Como posso <span class="text-dourado">atender você</span></h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <article class="reveal paper text-carvao rounded-2xl p-8 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="text-3xl mb-4">🤵</div>
+            <h3 class="text-xl font-semibold mb-2">Coordenação da equipe</h3>
+            <p class="text-gray-700 leading-relaxed">Coordenação da equipe de salão para um serviço impecável e sincronizado.</p>
+          </div>
+        </article>
+
+        <article class="reveal paper text-carvao rounded-2xl p-8 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="text-3xl mb-4">🥂</div>
+            <h3 class="text-xl font-semibold mb-2">Recepção e acomodação</h3>
+            <p class="text-gray-700 leading-relaxed">Recepção e acomodação dos clientes com cortesia, discrição e elegância.</p>
+          </div>
+        </article>
+
+        <article class="reveal paper text-carvao rounded-2xl p-8 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="text-3xl mb-4">⭐</div>
+            <h3 class="text-xl font-semibold mb-2">Atendimento VIP</h3>
+            <p class="text-gray-700 leading-relaxed">Atendimento VIP e personalizado para garantir exclusividade a cada convidado.</p>
+          </div>
+        </article>
+
+        <article class="reveal paper text-carvao rounded-2xl p-8 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="text-3xl mb-4">🍸</div>
+            <h3 class="text-xl font-semibold mb-2">Serviço em bares</h3>
+            <p class="text-gray-700 leading-relaxed">Atendimento em bares, garantindo qualidade na apresentação de bebidas e coquetéis.</p>
+          </div>
+        </article>
+
+        <article class="reveal paper text-carvao rounded-2xl p-8 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="text-3xl mb-4">📋</div>
+            <h3 class="text-xl font-semibold mb-2">Supervisão do serviço</h3>
+            <p class="text-gray-700 leading-relaxed">Supervisão para garantir que cada detalhe do salão e buffet esteja perfeito.</p>
+          </div>
+        </article>
+
+        <article class="reveal rounded-2xl p-8 bg-vinho shadow-xl flex flex-col justify-center">
+          <h3 class="text-2xl font-light mb-3">Vai ter evento?</h3>
+          <p class="text-gray-200 mb-6 text-sm leading-relaxed">Me conte a data, o local e o número de convidados.</p>
+          <a href="#contato" class="self-start px-6 py-2 bg-dourado text-carvao font-semibold rounded-full hover:bg-dourado-light transition duration-300">
+            Pedir orçamento
+          </a>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== UNIDADES / BASES (CLEAN & INTEGRADO) ==================== -->
+  <section id="unidades" class="py-20 px-6 bg-carvao border-y border-vinho/30">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-12 reveal">
+        <p class="text-dourado uppercase tracking-[0.3em] text-sm mb-2">Cobertura</p>
+        <h2 class="text-3xl md:text-4xl font-light">Bases de <span class="text-dourado">Atendimento</span></h2>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-6 text-center">
+        
+        <div class="reveal bg-[#1a1a1a] border border-vinho/40 rounded-2xl p-6">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="text-xl font-semibold text-dourado mb-1">Ceilândia</h3>
+          <p class="text-sm text-gray-300">Base Regional para festas, chácaras e comércios.</p>
+        </div>
+
+        <div class="reveal bg-[#1a1a1a] border border-vinho/40 rounded-2xl p-6">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="text-xl font-semibold text-dourado mb-1">Riacho Fundo 1</h3>
+          <p class="text-sm text-gray-300">Prontidão para confraternizações e eventos particulares.</p>
+        </div>
+
+        <div class="reveal bg-[#1a1a1a] border border-vinho/40 rounded-2xl p-6">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="text-xl font-semibold text-dourado mb-1">Expansão do Setor O</h3>
+          <p class="text-sm text-gray-300">Atendimento a residências, salões e restaurantes.</p>
+        </div>
+
+      </div>
+
+      <p class="text-center text-xs text-gray-400 mt-6 reveal">
+        Também atendemos em todo o Distrito Federal: Plano Piloto, Lago Sul, Lago Norte, Águas Claras, Taguatinga e Park Way.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ==================== CALCULADORA DE EQUIPE (FUNCIONALIDADE COMPLETA & CLEAN) ==================== -->
+  <section id="calculadora" class="py-20 px-6 bg-[#0f0f0f]">
+    <div class="max-w-4xl mx-auto">
+      
+      <div class="text-center mb-12 reveal">
+        <p class="text-dourado uppercase tracking-[0.3em] text-sm mb-2">Simulador Técnico</p>
+        <h2 class="text-3xl md:text-4xl font-light">Quantos profissionais <span class="text-dourado">você precisa?</span></h2>
+        <p class="text-gray-400 text-sm mt-2">Ajuste os dados e veja a estimativa recomendada para o seu salão.</p>
+      </div>
+
+      <div class="reveal bg-[#1a1a1a] border border-vinho/40 rounded-2xl p-8 shadow-xl">
+        
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          
+          <div class="space-y-6">
+            <div>
+              <label for="calcConvidados" class="block text-sm text-gray-300 mb-2">
+                Número de convidados: <span id="convidadosValor" class="text-dourado font-bold text-lg">50</span> pessoas
+              </label>
+              <input type="range" id="calcConvidados" min="10" max="300" step="5" value="50" class="w-full accent-dourado cursor-pointer" />
+              <div class="flex justify-between text-xs text-gray-500 mt-1">
+                <span>10</span>
+                <span>150</span>
+                <span>300+</span>
+              </div>
+            </div>
+
+            <div>
+              <label for="calcEstilo" class="block text-sm text-gray-300 mb-2">
+                Estilo do serviço:
+              </label>
+              <select id="calcEstilo" class="w-full bg-carvao border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-dourado">
+                <option value="volante">Coquetel Volante / Finger Food</option>
+                <option value="buffet" selected>Buffet Americano / Almoço / Jantar</option>
+                <option value="empratado">Jantar Franco-Americano / Empratado</option>
+                <option value="churrasco">Churrasco com Bebidas</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="flex items-center gap-2 cursor-pointer text-sm text-gray-300">
+                <input type="checkbox" id="calcBar" class="accent-dourado w-4 h-4 rounded" checked />
+                <span>Terá bar com drinks / coquetéis</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Resultado Estimado -->
+          <div class="bg-carvao border border-vinho/50 rounded-xl p-6 text-center flex flex-col justify-between h-full">
+            <div>
+              <p class="text-xs uppercase tracking-widest text-dourado mb-1">Equipe Recomendada</p>
+              <div class="my-3">
+                <span id="resGarcons" class="text-5xl font-bold text-dourado">3</span>
+                <span class="text-gray-300 text-sm block mt-1">Garçons Profissionais</span>
+              </div>
+              <div class="text-xs text-gray-300 space-y-1 border-t border-gray-800 pt-3">
+                <p id="resMaitre">• 1 Maître Coordenador de Salão</p>
+                <p id="resBarman">• 1 Bartender Especializado</p>
+              </div>
+            </div>
+
+            <button id="btnAplicarCalculadora" class="mt-6 w-full py-2.5 bg-dourado text-carvao font-semibold text-xs uppercase tracking-wider rounded-full hover:bg-dourado-light transition">
+              Usar Esta Estimativa no Orçamento
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== GALERIA ==================== -->
+  <section id="galeria" class="py-24 px-6 bg-carvao">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-14 reveal">
+        <p class="text-dourado uppercase tracking-[0.3em] text-sm mb-3">Galeria</p>
+        <h2 class="text-4xl font-light">Momentos <span class="text-dourado">servidos</span></h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="img/foto-maximiliano.jpg" alt="Equipe de serviço em evento - Maximiliano Costa" class="reveal rounded-xl w-full h-64 object-cover hover:scale-[1.02] transition duration-500 cursor-pointer" loading="lazy" onclick="abrirLightbox(this.src)" />
+        <img src="img/foto-mesa-posta.jpg" alt="Mesa posta com arranjos verdes e petiscos" class="reveal rounded-xl w-full h-64 object-cover hover:scale-[1.02] transition duration-500 cursor-pointer" loading="lazy" onclick="abrirLightbox(this.src)" />
+        <img src="img/foto-mesas-jardim.jpg" alt="Salão decorado com mesas elegantes ao ar livre" class="reveal rounded-xl w-full h-64 object-cover hover:scale-[1.02] transition duration-500 cursor-pointer" loading="lazy" onclick="abrirLightbox(this.src)" />
+        <img src="img/foto-buffet.jpg" alt="Buffet com antepastos e decoração" class="reveal rounded-xl w-full h-64 object-cover hover:scale-[1.02] transition duration-500 cursor-pointer" loading="lazy" onclick="abrirLightbox(this.src)" />
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-2 gap-4 mt-4">
+        <img src="img/foto-bar.jpg" alt="Bar montado para coquetéis e bebidas" class="reveal rounded-xl w-full h-64 object-cover hover:scale-[1.02] transition duration-500 cursor-pointer" loading="lazy" onclick="abrirLightbox(this.src)" />
+        <img src="img/foto-rechaud.jpg" alt="Buffet com rechauds e louças requintadas" class="reveal rounded-xl w-full h-64 object-cover hover:scale-[1.02] transition duration-500 cursor-pointer" loading="lazy" onclick="abrirLightbox(this.src)" />
+      </div>
+
+      <!-- Botão para ver o mosaico geral -->
+      <div class="mt-8 text-center reveal">
+        <button onclick="abrirLightbox('img/mosaico-eventos.jpg')" class="px-6 py-2 border border-dourado text-dourado rounded-full text-xs uppercase tracking-widest hover:bg-dourado hover:text-carvao transition">
+          Ver Mosaico Completo
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== AVALIAÇÃO ==================== -->
+  <section id="avaliacao" class="py-24 px-6 bg-gradient-to-b from-carvao to-vinho-dark">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <p class="text-dourado uppercase tracking-[0.3em] text-sm mb-3">Avaliação</p>
+      <h2 class="text-4xl font-light mb-6">O melhor atendimento do DF</h2>
+      <div class="text-3xl text-dourado tracking-widest mb-4" aria-label="Avaliação 4.8 de 5 estrelas">★★★★☆</div>
+      <p class="text-gray-300 text-lg mb-10">"A arte de servir bem" guia cada evento, do primeiro contato ao último brinde.</p>
+
+      <!-- Depoimentos Reais Clean -->
+      <div class="grid md:grid-cols-3 gap-6 text-left">
+        <div class="p-6 rounded-2xl bg-carvao/80 border border-vinho/40">
+          <p class="text-gray-300 text-sm italic mb-4">"Postura impecável de garçons e maître no meu casamento no Park Way. Todos os convidados elogiaram!"</p>
+          <p class="text-xs text-dourado font-semibold">Dra. Beatriz F.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-carvao/80 border border-vinho/40">
+          <p class="text-gray-300 text-sm italic mb-4">"Pontualidade britânica na nossa confraternização em Ceilândia. Não deixaram faltar nada em nenhuma mesa."</p>
+          <p class="text-xs text-dourado font-semibold">Rodrigo A.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-carvao/80 border border-vinho/40">
+          <p class="text-gray-300 text-sm italic mb-4">"O serviço de bar e drinks com canecas de moscow mule foi o ponto alto do meu aniversário de 40 anos."</p>
+          <p class="text-xs text-dourado font-semibold">Camila M.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CONTATO ==================== -->
+  <section id="contato" class="py-24 px-6 bg-carvao">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+      
+      <div class="reveal">
+        <p class="text-dourado uppercase tracking-[0.3em] text-sm mb-3">Contato</p>
+        <h2 class="text-4xl font-light mb-6 leading-tight">Vamos planejar<br/>seu evento?</h2>
+        
+        <ul class="space-y-5 text-lg">
+          <li>
+            <a href="https://wa.me/5561998894257" target="_blank" rel="noopener" class="flex items-center gap-3 hover:text-dourado transition">
+              <span class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-sm font-bold text-white shrink-0">WA</span>
+              <span>(61) 99889-4257</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mrchefegrego@gmail.com" class="flex items-center gap-3 hover:text-dourado transition">
+              <span class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center text-sm font-bold text-white shrink-0">@</span>
+              <span class="break-all">mrchefegrego@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/costaesilva_eventos" target="_blank" rel="noopener" class="flex items-center gap-3 hover:text-dourado transition">
+              <span class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center text-sm font-bold text-white shrink-0">IG</span>
+              <span>costaesilva_eventos</span>
+            </a>
+          </li>
+          <li class="flex items-center gap-3 text-gray-400">
+            <span class="w-10 h-10 rounded-full bg-vinho flex items-center justify-center text-sm font-bold text-white shrink-0">DF</span>
+            <span>Brasília - DF (Ceilândia, Riacho Fundo 1, Setor O e todo DF)</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Formulário Completo com Envio Estruturado -->
+      <form id="formContato" class="reveal bg-[#1c1c1c] border border-vinho/40 rounded-2xl p-8 space-y-4">
+        <div>
+          <label for="nome" class="block text-sm mb-1 text-gray-300">Seu nome *</label>
+          <input id="nome" name="nome" required placeholder="Digite seu nome" class="w-full bg-carvao border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-dourado transition text-sm" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label for="whatsapp" class="block text-sm mb-1 text-gray-300">WhatsApp *</label>
+            <input id="whatsapp" name="whatsapp" type="tel" required placeholder="(61) 90000-0000" class="w-full bg-carvao border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-dourado transition text-sm" />
+          </div>
+          <div>
+            <label for="convidados" class="block text-sm mb-1 text-gray-300">Nº Convidados</label>
+            <input id="convidados" name="convidados" type="number" min="5" max="1000" placeholder="Ex: 50" class="w-full bg-carvao border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-dourado transition text-sm" />
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label for="tipo" class="block text-sm mb-1 text-gray-300">Tipo de evento</label>
+            <select id="tipo" name="tipo" class="w-full bg-carvao border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-dourado transition text-sm">
+              <option>Evento particular</option>
+              <option>Casamento</option>
+              <option>Aniversário</option>
+              <option>Restaurante</option>
+              <option>Bar</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div>
+            <label for="data" class="block text-sm mb-1 text-gray-300">Data prevista</label>
+            <input id="data" name="data" type="date" class="w-full bg-carvao border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-dourado transition text-sm" />
+          </div>
+        </div>
+
+        <div>
+          <label for="local" class="block text-sm mb-1 text-gray-300">Local / Região</label>
+          <input id="local" name="local" placeholder="Ex: Ceilândia, Riacho Fundo, Plano Piloto..." class="w-full bg-carvao border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-dourado transition text-sm" />
+        </div>
+        
+        <div>
+          <label for="mensagem" class="block text-sm mb-1 text-gray-300">Mensagem / Observações</label>
+          <textarea id="mensagem" name="mensagem" rows="3" placeholder="Detalhes, horários ou necessidades do evento..." class="w-full bg-carvao border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-dourado transition text-sm"></textarea>
+        </div>
+        
+        <button type="submit" class="w-full py-3 bg-dourado text-carvao font-semibold rounded-full hover:bg-dourado-light transition duration-300">
+          Enviar pelo WhatsApp
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-vinho/40 py-10 text-center bg-carvao">
+    <p class="text-dourado text-xl tracking-widest font-light">COSTA &amp; SILVA EVENTOS</p>
+    <p class="text-gray-400 text-sm mt-2">Maximiliano Costa &bull; Maître/Garçom Profissional</p>
+    <p class="text-gray-500 text-xs mt-4">&copy; <span id="ano"></span> Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp (Visual exato com WA) -->
+  <a href="https://wa.me/5561998894257" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-600 hover:bg-green-500 shadow-lg flex items-center justify-center font-bold text-sm text-white transition hover:scale-110">
+    WA
+  </a>
+
+  <!-- Lightbox Modal -->
+  <div id="modalLightbox" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4 cursor-pointer" onclick="fecharLightbox()">
+    <img id="lightboxImg" src="" alt="Imagem ampliada" class="max-h-[85vh] max-w-[90vw] rounded-xl border border-dourado/40 shadow-2xl object-contain" />
+  </div>
+
+  <script>
+    // 1. Menu mobile
+    const toggle = document.getElementById('toggleMenu');
+    const menuMobile = document.getElementById('menuMobile');
+    toggle.addEventListener('click', () => menuMobile.classList.toggle('hidden'));
+    menuMobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menuMobile.classList.add('hidden')));
+
+    // 2. Animação ao rolar
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // 3. Lightbox
+    const modalLightbox = document.getElementById('modalLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    function abrirLightbox(src) {
+      lightboxImg.src = src;
+      modalLightbox.classList.remove('hidden');
+      modalLightbox.classList.add('flex');
+    }
+    function fecharLightbox() {
+      modalLightbox.classList.add('hidden');
+      modalLightbox.classList.remove('flex');
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') fecharLightbox();
+    });
+
+    // 4. Calculadora Interativa de Equipe
+    const calcConvidados = document.getElementById('calcConvidados');
+    const convidadosValor = document.getElementById('convidadosValor');
+    const calcEstilo = document.getElementById('calcEstilo');
+    const calcBar = document.getElementById('calcBar');
+    const resGarcons = document.getElementById('resGarcons');
+    const resMaitre = document.getElementById('resMaitre');
+    const resBarman = document.getElementById('resBarman');
+
+    function atualizarCalculo() {
+      const qtd = parseInt(calcConvidados.value, 10);
+      convidadosValor.textContent = qtd;
+      const estilo = calcEstilo.value;
+      const temBar = calcBar.checked;
+
+      let divisor = 18;
+      if (estilo === 'volante') divisor = 18;
+      else if (estilo === 'buffet') divisor = 22;
+      else if (estilo === 'empratado') divisor = 11;
+      else if (estilo === 'churrasco') divisor = 18;
+
+      let garcons = Math.ceil(qtd / divisor);
+      if (garcons < 2 && qtd >= 20) garcons = 2;
+      if (garcons < 1) garcons = 1;
+
+      resGarcons.textContent = garcons;
+
+      if (qtd >= 60 || garcons >= 4) {
+        resMaitre.textContent = "• 1 Maître Dedicado (Coordenação de Salão)";
+      } else {
+        resMaitre.textContent = "• Maître/Garçom Responsável (Supervisão Direta)";
+      }
+
+      if (temBar) {
+        const barmans = Math.ceil(qtd / 70);
+        resBarman.textContent = `• ${barmans} Bartender${barmans > 1 ? 's' : ''} (Drinks & Coquetéis)`;
+        resBarman.style.display = 'block';
+      } else {
+        resBarman.style.display = 'none';
+      }
+    }
+
+    calcConvidados.addEventListener('input', atualizarCalculo);
+    calcEstilo.addEventListener('change', atualizarCalculo);
+    calcBar.addEventListener('change', atualizarCalculo);
+    atualizarCalculo();
+
+    // Integrar Calculadora ao Formulário
+    document.getElementById('btnAplicarCalculadora').addEventListener('click', () => {
+      document.getElementById('convidados').value = calcConvidados.value;
+      const selectTipo = document.getElementById('tipo');
+      selectTipo.value = 'Evento particular';
+      
+      const estiloTexto = calcEstilo.options[calcEstilo.selectedIndex].text;
+      const resumoCalc = `[Estimativa: ${calcConvidados.value} convidados, estilo ${estiloTexto}, ${calcBar.checked ? 'com bar' : 'sem bar'}]`;
+      const campoMensagem = document.getElementById('mensagem');
+      if (!campoMensagem.value.includes('Estimativa:')) {
+        campoMensagem.value = resumoCalc + "\n" + campoMensagem.value;
+      }
+      
+      document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // 5. Formulário Estruturado -> WhatsApp
+    document.getElementById('formContato').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = e.target;
+      const data = f.data.value ? new Date(f.data.value + 'T00:00:00').toLocaleDateString('pt-BR') : 'A definir';
+      const convidados = f.convidados.value ? `${f.convidados.value} pessoas` : 'A definir';
+      const local = f.local.value.trim() || 'Brasília/DF';
+      const whats = f.whatsapp.value.trim() || '-';
+      
+      const texto = 
+`*SOLICITAÇÃO DE ORÇAMENTO - COSTA & SILVA EVENTOS*
+----------------------------------------
+*Cliente:* ${f.nome.value.trim()}
+*WhatsApp:* ${whats}
+*Tipo de evento:* ${f.tipo.value}
+*Data:* ${data}
+*Convidados:* ${convidados}
+*Local/Região:* ${local}
+----------------------------------------
+*Mensagem:*
+${f.mensagem.value.trim() || 'Sem observações adicionais.'}
+----------------------------------------
+_Enviado pelo site oficial Costa & Silva Eventos._`;
+
+      window.open(`https://wa.me/5561998894257?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+    });
+
+    // 6. Ano automático
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
